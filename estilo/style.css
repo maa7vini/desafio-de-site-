@@ -32,36 +32,118 @@ body {
 }
 
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
 }
 
 header > p {
     color: white;
+    font-size: 1.2em;
+    font: var(--font-padrao);
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
 }
 
 nav {
-    background-color: var(--cor4);
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.548);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main {
     background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main h1 {
     color: var(--cor5);
     font-family: var(--font-android);
+    text-align: center;
 }
 
 main h2 {
     font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main  p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-size: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    color: var(--cor4);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: black;
     color: white;
+    text-align: center;
+}
+
+footer  a {
+    color: white;
+    text-decoration: none;
 }
